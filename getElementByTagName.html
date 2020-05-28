@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            getElementByTagName
+        </title>
+        <script type="text/javascript">
+            function fn1(){
+                var para=document.getElementsByTagName("p");
+                para[1].style.fontSize=  "40px" ;
+                para[0].style.fontWeight="bold";
+                para[2].style.color="red";
+                para[3].style.fontStyle="italic";
+
+            }
+        </script>
+    </head>
+    <body>
+        <p>This is p1</p>
+        <p>This is p2</p>
+        <p>This is p3</p>
+        <p>This is p4</p>
+        <p>This is p5</p>
+        <p>This is p6</p>
+        <p>This is p7</p>
+        <br>
+        <button  onclick="fn1()">click me </button>
+    </body>
+</html>
