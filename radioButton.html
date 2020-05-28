@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            radioButton
+        </title>
+        <script type="text/javascript">
+            function fn1(){
+                var rd1=document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+                var rd3=document.getElementById("rd3");
+                if(rd1.checked==true)
+                alert("you have selected "+ rd1.value);
+                else if(rd2.checked==true)
+                alert("you have selected "+ rd2.value);
+                else if(rd3.checked==true)
+                alert("you have selected "+ rd3.value);
+                else alert("nothing is selected yet");
+            
+            }
+        
+        </script>
+    </head>
+    <body>
+        <input name="name1" id="rd1" type="radio" value="jv">java</input> <br>
+        <input name="name1" id="rd2" type="radio" value="py">python</input> <br>
+        <input name="name1" id="rd3" type="radio" value="js">javascript</input> <br>
+        <button onclick="fn1()">submit</button>
+    </body>
+</html>
