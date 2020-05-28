@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            textBox
+        </title>
+        <script type="text/javascript">
+            function fn1(){
+                var name=document.getElementById("fname").value;
+                var mail=document.getElementById("fmail").value;
+                alert("your name is "+ name+"\n"+"Email is "+ mail);
+            }
+        
+        </script>
+    </head>
+    <body>
+        <input id="fname" type="text"  
+        placeholder="your name">
+        <input id="fmail"type="text" placeholder="Email id">
+        <button onclick="fn1()">submit</button>
+    </body>
+</html>
