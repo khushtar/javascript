@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                formValidation2
+        </title>
+    </head>
+    <body>
+        <form action="welcomePage.html" onsubmit="return validate()">
+            <input id="name" type="text" placeholder="yourName"><br>
+            <label for="" id="Nlbl" style="color:red; visibility:hidden">Name is required</label>
+            <br>
+            <input id="pass" type="password" placeholder="passWord"><br>
+            <label for="" id="Plbl" style="color:red; visibility:hidden">password is required</label><br>
+            <label for="" id="Pllbl" style="color:red;visibility: hidden;">password should not less then 5 and more than 12</label> <br><br>
+            <button  type="submit">Click Me</button>
+
+        </form>
+    </body>
+    <script>
+        function validate(){
+            var name=document.getElementById("name");
+            var pass=document.getElementById("pass");
+            if(name.value.trim().length==0){
+                name.style.border="solid 1px red";
+                document.getElementById("lbl").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value.length==0){
+                pass.style.border="solid 1px red";
+                document.getElementById("Plbl").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value.length<5 || pass.length>12)
+            {
+                pass.style.border="solid 1px red";
+                document.getElementById("Pllbl").style.visibility="visible";
+                return false;
+            }
+            else 
+            {
+                return true;
+            }
+        }
+    </script>
+</html>
