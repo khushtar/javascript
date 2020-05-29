@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            getElementByTagName2
+        </title>
+    </head>
+    <body>
+        <p class="mypara">this is para 1</p>
+        <p>this is para 2</p>
+        <p class="mypara">this is para 3</p>
+        <p>this is para 4</p>
+        <p class="mypara">this is para 5</p>
+        <p>this is para 6</p>
+        <a class="mypara" href="">this is anchor tag</a>
+        <br>
+        <button onclick="tag()">click me</button>
+    </body>
+    <script type="text/javascript">
+        function tag(){
+            var cls=document.getElementsByClassName("mypara");
+            for(var i=0;i<cls.length;i++)
+            cls[i].style.color="red";
+        }
+    </script>
+</html>
